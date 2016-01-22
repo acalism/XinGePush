@@ -1,25 +1,32 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "796f004e-8ca1-11e4-8487-d1132ac2dc54++5801",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F3E235CFCFC0A62116BA8A6842DFF448FEFFDE06",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "796f004e-8ca1-11e4-8487-d1132ac2dc54++5801" : {
+    "e28bc5d2-b482-11e3-abbe-4fcccf0daa44++9441" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "796f004e-8ca1-11e4-8487-d1132ac2dc54++5801" : 0
+    "e28bc5d2-b482-11e3-abbe-4fcccf0daa44++9441" : 0,
+    "F3E235CFCFC0A62116BA8A6842DFF448FEFFDE06" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6F9D2F1C-1D0A-470C-9C36-0A35638AAB34",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "796f004e-8ca1-11e4-8487-d1132ac2dc54++5801" : "c_cpp_proj\/"
+    "e28bc5d2-b482-11e3-abbe-4fcccf0daa44++9441" : "..\/..\/tencent\/byod\/SMD-trunk",
+    "F3E235CFCFC0A62116BA8A6842DFF448FEFFDE06" : "XinGePush\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "XG-Demo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "branches\/xg_iOS\/20150805v1\/XG-Demo\/XG-Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "XG-Demo.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/tc-svn.tencent.com\/doss\/doss_da_rep",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/acalism\/XinGePush.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F3E235CFCFC0A62116BA8A6842DFF448FEFFDE06"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/tc-svn.tencent.com\/mqq\/mqq_emqqsecure_rep",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "796f004e-8ca1-11e4-8487-d1132ac2dc54++5801"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e28bc5d2-b482-11e3-abbe-4fcccf0daa44++9441"
     }
   ]
 }

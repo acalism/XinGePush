@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68AB79AB1C28E40B00F62A8B /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682353641BAAA49A003BBC84 /* libXG-SDK.a */; };
 		6E320D68183361B600FE8CF6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E320D67183361B600FE8CF6 /* CoreTelephony.framework */; };
 		6E320D6A1833629F00FE8CF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E320D691833629F00FE8CF6 /* SystemConfiguration.framework */; };
 		6E5B573518C03BA0001C4722 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5B573118C034CE001C4722 /* CFNetwork.framework */; };
@@ -22,12 +21,12 @@
 		6E6B91F0182A6965000D102E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B91EF182A6965000D102E /* Images.xcassets */; };
 		791181301C524D7700069241 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7911812F1C524D7700069241 /* libsqlite3.tbd */; };
 		791181321C524D7E00069241 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 791181311C524D7E00069241 /* libz.tbd */; };
+		791181341C52531500069241 /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 791181331C52531500069241 /* libXG-SDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6808590E1B259816008873B2 /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
 		6808590F1B259816008873B2 /* XGSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSetting.h; sourceTree = "<group>"; };
-		682353641BAAA49A003BBC84 /* libXG-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libXG-SDK.a"; path = "../../../tencent/byod/SMD-trunk/smd/smd/Common/Vendor/XGPush/libXG-SDK.a"; sourceTree = "<group>"; };
 		6E320D67183361B600FE8CF6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6E320D691833629F00FE8CF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6E5B573118C034CE001C4722 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -48,6 +47,7 @@
 		6E6B91F6182A6965000D102E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7911812F1C524D7700069241 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		791181311C524D7E00069241 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		791181331C52531500069241 /* libXG-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libXG-SDK.a"; path = "XGPush-sdk/libXG-SDK.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791181341C52531500069241 /* libXG-SDK.a in Frameworks */,
 				791181321C524D7E00069241 /* libz.tbd in Frameworks */,
 				791181301C524D7700069241 /* libsqlite3.tbd in Frameworks */,
-				68AB79AB1C28E40B00F62A8B /* libXG-SDK.a in Frameworks */,
 				6E5B573518C03BA0001C4722 /* CFNetwork.framework in Frameworks */,
 				6E320D6A1833629F00FE8CF6 /* SystemConfiguration.framework in Frameworks */,
 				6E320D68183361B600FE8CF6 /* CoreTelephony.framework in Frameworks */,
@@ -77,7 +77,7 @@
 				6808590F1B259816008873B2 /* XGSetting.h */,
 			);
 			name = "XGPush-sdk-2.4.6";
-			path = "../../../tencent/byod/SMD-trunk/smd/smd/Common/Vendor/XGPush";
+			path = "XGPush-sdk";
 			sourceTree = "<group>";
 		};
 		6E6B91CB182A6965000D102E = {
@@ -101,9 +101,9 @@
 		6E6B91D6182A6965000D102E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				791181331C52531500069241 /* libXG-SDK.a */,
 				791181311C524D7E00069241 /* libz.tbd */,
 				7911812F1C524D7700069241 /* libsqlite3.tbd */,
-				682353641BAAA49A003BBC84 /* libXG-SDK.a */,
 				6E5B573118C034CE001C4722 /* CFNetwork.framework */,
 				6E320D691833629F00FE8CF6 /* SystemConfiguration.framework */,
 				6E320D67183361B600FE8CF6 /* CoreTelephony.framework */,
@@ -253,7 +253,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -270,7 +270,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/XGPush-sdk";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/XGPush-sdk";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -292,7 +294,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -302,7 +304,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/XGPush-sdk";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/XGPush-sdk";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -315,27 +319,18 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"ENABLE_NS_ASSERTIONS[arch=*]" = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XG-Demo/XG-Demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/sdk",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "XG-Demo/XG-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/sdk",
-					"$(PROJECT_DIR)/sdk",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.teg.XGDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5d0ea25a-0d38-4d64-8f03-f08a2bec29d7";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
@@ -348,26 +343,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XG-Demo/XG-Demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/sdk",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "XG-Demo/XG-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/sdk",
-					"$(PROJECT_DIR)/sdk",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.teg.XGDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5d0ea25a-0d38-4d64-8f03-f08a2bec29d7";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -390,7 +376,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -400,7 +386,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/XGPush-sdk";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/XGPush-sdk";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -413,26 +401,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XG-Demo/XG-Demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/sdk",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "XG-Demo/XG-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/sdk",
-					"$(PROJECT_DIR)/sdk",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.teg.XGDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5d0ea25a-0d38-4d64-8f03-f08a2bec29d7";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
