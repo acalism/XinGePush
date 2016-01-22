@@ -16,109 +16,48 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	
-	XGSetting *setting = [XGSetting getInstance];
-	[setting enableDebug:self->swShowLog.on];
-	
+
+    [[XGSetting getInstance] enableDebug:self->swShowLog.on];
     //btnLogoutDevice.enabled = false;
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)setTag:(id)sender{
+- (IBAction)setTag:(id)sender {
     //为不同的"用户"设置标签
-    
-    NSString * tag = @"name:sean";
-    
-    void (^successBlock)(void) = ^(void){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送"
-                                                        message:@"设置标签成功"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
+    [XGPush setTag:@"name:sean" successCallback:^(void){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送" message:@"设置标签成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-		[alert release];
-    };
-    
-    void (^errorBlock)(void) = ^(void){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送"
-                                                        message:@"设置标签失败"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
+    } errorCallback:^(void){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送" message:@"设置标签失败" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-		[alert release];
-    };
-    
-    [XGPush setTag:tag successCallback:successBlock errorCallback:errorBlock];
-	
-    //[XGPush setTag:tag];
-    
+    }];
+    //[XGPush setTag:@"name:sean"];
 }
 
-- (IBAction)delTag:(id)sender{
-    NSString * tag = @"age:10";
-    
-    
-    void (^successBlock)(void) = ^(void){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送"
-                                                        message:@"删除标签成功"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
+- (IBAction)delTag:(id)sender {
+    [XGPush delTag:@"age:10" successCallback:^(void){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送" message:@"删除标签成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-		[alert release];
-    };
-    
-    void (^errorBlock)(void) = ^(void){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送"
-                                                        message:@"删除标签失败"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
+    } errorCallback:^(void){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送" message:@"删除标签失败" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-		[alert release];
-    };
-
-    [XGPush delTag:tag successCallback:successBlock errorCallback:errorBlock];
-    //[XGPush delTag:tag];
+    }];
+    //[XGPush delTag:@"age:10"];
 }
 
-- (IBAction)logoutDevice:(id)sender{
-	[XGPush unRegisterDevice:^{
-		    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送"
-		                                                    message:@"注销设备success"
-		                                                   delegate:nil
-		                                          cancelButtonTitle:@"OK"
-		                                          otherButtonTitles:nil];
-		    [alert show];
-			[alert release];
-
-	} errorCallback:^{
-		
-		    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送"
-		                                                    message:@"注销设备fail"
-		                                                   delegate:nil
-		                                          cancelButtonTitle:@"OK"
-		                                          otherButtonTitles:nil];
-		    [alert show];
-			[alert release];
-
-	}];
+- (IBAction)logoutDevice:(id)sender {
+    [XGPush unRegisterDevice:^{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送" message:@"注销设备success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    } errorCallback:^{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"信鸽推送" message:@"注销设备fail" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }];
 }
 
-- (IBAction)toggleDebug:(id)sender
-{
-	XGSetting *setting = [XGSetting getInstance];
-	[setting enableDebug:self->swShowLog.on];
+- (IBAction)toggleDebug:(id)sender {
+    [[XGSetting getInstance] enableDebug:self->swShowLog.on];
 }
 
 @end
